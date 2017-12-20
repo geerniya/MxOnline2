@@ -1,0 +1,75 @@
+{% extends 'usercenter-base.html' %}
+
+{% block title %}
+我的消息—慕学在线网
+{% endblock %}
+
+{% block custom_bread %}
+<section>
+        <div class="wp">
+            <ul  class="crumbs">
+                <li><a href="{% url 'index' %}">首页</a>></li>
+                <li><a href="{% url 'users:info' %}">个人中心</a>></li>
+                <li>我的消息</li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}
+
+{% block right_content %}
+<div class="right" >
+		<div class="personal_des Releasecont">
+			<div class="head">
+				<h1>我的消息</h1>
+			</div>
+
+		</div>
+		<div class="personal_des permessage">
+			<div class="head">
+				<ul class="tab_header messagehead">
+					<li class="active"><a href="/user/message/">个人消息</a> </li>
+				</ul>
+
+
+			</div>
+			<div class="messagelist">
+
+                {% for my_message in my_messages %}
+                    <div class="messages">
+                        <div class="fr">
+                            <div class="top"><span class="fl time">{{ my_message.add_time }}</span><span class="fr btn foldbtn"></span></div>
+                            <p>
+                                {{ my_message.message }}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+
+
+
+
+
+			</div>
+
+
+			<div class="pageturn pagerright">
+                <ul class="pagelist">
+
+
+
+
+
+                            <li class="active"><a href="?page=1">1</a></li>
+
+
+
+
+
+            </ul>
+            </div>
+		</div>
+
+	</div>
+{% endblock %}
+
