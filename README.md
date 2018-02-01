@@ -1,2 +1,8 @@
 # MxOnline2
-a study webside made by Django
+
+本项目是慕课网上的一个Django实战项目，完成后可以实现一个全新在线教育平台——慕学网，具备一个在线教育网站所应该具有的所有功能。整体框架采用Django搭建，采用Python 3.6版本。
+
+课程的网址链接如下：https://coding.imooc.com/class/78.html
+
+需要付费购买，以我本人的体验来讲，绝对是物超所值。如果你刚学完Python不知道接下来该学什么，这个项目会是一个不错的实践。
+
